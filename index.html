@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cricket Player Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏏 Cricket Player Profile</h1>
+    <input type="text" id="playerInput" placeholder="Enter Player Name (e.g., Virat Kohli)" />
+    <button onclick="getPlayerInfo()">Search</button>
+
+    <div id="playerCard" class="hidden">
+      <img id="playerImg" src="" alt="Player Image" />
+      <h2 id="playerName"></h2>
+      <p><strong>DOB:</strong> <span id="dob"></span></p>
+      <p><strong>Country:</strong> <span id="country"></span></p>
+      <p><strong>Role:</strong> <span id="role"></span></p>
+      <p><strong>Batting Style:</strong> <span id="batting"></span></p>
+      <p><strong>Bowling Style:</strong> <span id="bowling"></span></p>
+    </div>
+
+    <div id="statsContainer" class="hidden">
+      <h3>📊 Player Stats</h3>
+      <div id="battingStats"></div>
+      <div id="bowlingStats"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
